@@ -14,6 +14,16 @@
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Docker: Attach to Node",
+            "port": 9229,
+            "address": "localhost",
+            "sourceMapPathOverrides": {
+                "/usr/app/*": "${workspaceRoot}/*"
+            }
         }
     ]
 }
